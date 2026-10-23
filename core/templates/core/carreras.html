@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carreras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'core/css/estilo.css' %}">
+</head>
+<body>
+
+    <div>
+        <h1 class = "mb-3">Carreras del Area de Informatica</h1>
+
+        <ul class = "list-group">
+            {% for carrera in carreras %}
+                <il class = "list-group-item">{{ carrera }}</il>
+            {% endfor %}
+        </ul>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,16 @@
+body {
+    background-color: #f4f6f9;
+}
+
+h1 {
+    color: #17365d;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+main .p-5 {
+    background-color: white !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
