@@ -1,0 +1,14 @@
+
+{% extends 'core/base.html' %}
+
+{% block titulo %}Carreras | Área de Informática{% endblock %}
+
+{% block contenido %}
+    <h1>Carreras</h1>
+
+    <ul class="list-group">
+        {% for carrera in carreras %}
+            <li class="list-group-item">{{ carrera }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

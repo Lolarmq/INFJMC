@@ -1,0 +1,14 @@
+
+{% extends 'core/base.html' %}
+
+{% block titulo %}Docentes | Área de Informática{% endblock %}
+
+{% block contenido %}
+    <h1>Docentes</h1>
+
+    <ul class="list-group">
+        {% for docente in docentes %}
+            <li class="list-group-item">{{ docente }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
